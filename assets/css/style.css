@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins' ,sans-serif;
+    background-color: #f4f4f4;
+}
+
+a,li{
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Navbar*/
+.navbar{
+    background-color: #DFDAF8;
+    height: 100px;
+    padding: 20px 60px;
+
+}
+.nav-logo{
+    float: left;
+}
+.main-logo{
+    width: 60px;
+}
+.text-logo{
+    float: right;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav-menu{
+float: left;
+margin-left: 50%;
+}
+.nav-menu li{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.nav-menu li a{
+    color: #2f2f2f;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-top: -20px;
+}
+.nav-menu li a:hover{
+    color: #FE2659;
+    font-weight: 600;
+}
+.nav-profil{
+    display: inline-block;
+   margin-left:20px ;
+}
+.icon-user{
+    margin-top: 10px;
+    width: 40px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown-content a{
+    color: #2f2f2f;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.dropdown-content a:hover{
+    color: #FE2659;
+    font-weight: 600;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-profil{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content-profil {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-left: -150px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown-content-profil a{
+    color: #2f2f2f;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.dropdown-content-profil a:hover{
+    color: #FE2659;
+    font-weight: 600;
+}
+.dropdown-profil:hover .dropdown-content-profil {
+    display: block;
+}
+/*Akhir Navbar*/
+
+.main-content{
+    margin-top: 20px;
+}
+.container{
+    padding: 20px 60px;
+}
+
+.title-content p{
+    float: left;
+    font-size: 36px;
+    font-weight: bold;
+}
+.btn-content{
+    margin-top: 10px;
+}
+.btn-content a{
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.btn-red{
+    color: #fff;
+    background-color: #FE2659;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.slider{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 0;
+    position: relative;
+    background-size: cover;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slider img{
+    width: 100%;
+    position: relative;
+    
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+}
+.navigation-manual{
+    position: absolute;
+    width: 1200px;
+    display: flex;
+    margin-top: 350px;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #FE2659;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.manual-btn:not(last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #FE2659;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 400px;
+}
+.navigation-auto div{
+    border: 2px solid #FE2659;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked~ .navigation-auto .auto-btn1{
+    background: #FE2659;
+}
+#radio2:checked~ .navigation-auto .auto-btn2{
+    background: #FE2659;
+}
+#radio3:checked~ .navigation-auto .auto-btn3{
+    background: #FE2659;
+}
+
+
+
+/*Achievment*/
+.achievment{
+    align-items: center;
+}
+.title-achievment{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+.card-box{
+    display: flex;
+    margin-left: 15px;
+}
+.card{
+    width: 350px;
+    height: 250px;
+    position: relative;
+    margin: 10px;
+}
+.card .front,.card .back{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: #fff;
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163, 61, 21, 0.200),0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+}
+.card .back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+}
+.card .back p{
+    margin: 10px 20px;
+    text-align: center;
+}
+.card .front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+}
+.card:hover .front{
+    transform: perspective(800px) rotateX(180deg);
+}
+.card:hover .back{
+    border-radius: 20px 20px 0 0;
+    transform: perspective(800px) rotateX(0);
+}
+
+
+
+/*Footer*/
+footer{
+    background-color: #211F1F;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+    color: #fff;
+    padding-left: 20px;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+/*Login*/
+.login{
+    display: flex;
+    width: 70%;
+    gap: 50px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.left{
+    width: 40%;
+}
+.logo{
+    display: flex;
+}
+.logo h1{
+    color: #3ea09f;
+    font-size: 35px;
+    font-family: 'Comic sans ms';
+    margin-bottom: 50px;
+}
+.form .title{
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+.input-form{
+    background: #f4f4f4;
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #a8a8a8;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.input-form::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #9D9B9B;
+    font-family: 'Poppins', sans-serif;
+}
+.btn{
+    background-color: #FE2659;
+    color: #fff;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin: 10px 0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #fa4771 ;
+}
+
+.forgot-password{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.form-group{
+    float: left;
+}
+.forgot{
+    float: right;
+}
+
+.line{
+    margin-top: 10px;
+    width: 1px;
+    background-color: #d3d3d3;
+}
+
+.right{
+    width: 60%;
+    align-items: center;
+}
+
+.wave{
+    position:fixed;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.banner-image{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+.login .right h3{
+    margin: 20px 0 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #231F20;
+}
+.login .right p{
+    text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #a8a8a8;
+}
+
+.line{
+    height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .login {
+      padding: 40px 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 90%;
+    }
+    .login .left {
+        align-items: center;
+       width: 100%;
+    }
+    .login .left .logo .line {
+      margin-top: 10px;
+      width: 1px;
+    }
+    .login .left .logo img {
+      width: 50px;
+    }
+    .login .line {
+      width: 90%;
+      margin: 0 auto;
+      height: 1px;
+    }
+    .login .right {
+      width: 100%;
+    }
+    .login .right .wave{
+        width: 500px;
+    }
+    .login .right h3 {
+      font-size: 18px;
+    }
+    .login .right p {
+      font-size: 14px;
+    }
+  }

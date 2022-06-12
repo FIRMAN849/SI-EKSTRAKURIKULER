@@ -1,0 +1,95 @@
+.register{
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 100px auto;
+}
+.form-register{
+    display: flex;
+}
+.register h1{
+    text-align: center;
+}
+
+.password{
+    display: flex;
+}
+.decision{
+    text-align: center;
+}
+
+.ml-3{
+margin-left: 10px;
+}
+.mr-3{
+    margin-right: 10px;
+}
+
+.mt-2{
+   margin-top: 5px; 
+}
+
+.pl-3{
+  margin-left: 10px;
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .register{
+    max-width: 100%;
+    padding: 20px;
+  }
+ .register .form-register{
+    flex-direction: column;
+  }
+  .register .form-register .left{
+    width: 100%;
+  }
+  .register .form-register .right{
+    width: 100%;
+  }
+  .register .form-register .ml-3{
+    margin-left: 0;
+  }
+
+  
+}
+
+@media screen and (max-width: 768px) {
+    .login {
+      padding: 40px 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 90%;
+    }
+    .login .left {
+        align-items: center;
+       width: 100%;
+    }
+    .login .left .logo .line {
+      margin-top: 10px;
+      width: 1px;
+    }
+    .login .left .logo img {
+      width: 50px;
+    }
+    .login .line {
+      width: 90%;
+      margin: 0 auto;
+      height: 1px;
+    }
+    .login .right {
+      width: 100%;
+    }
+    .login .right .wave{
+        width: 500px;
+    }
+    .login .right h3 {
+      font-size: 18px;
+    }
+    .login .right p {
+      font-size: 14px;
+    }
+  }
